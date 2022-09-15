@@ -1,0 +1,162 @@
+/*
+Link to the colour palette.
+https://huemint.com/website-1/#palette=ffffff-575664-4bb084
+*/
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  padding: 10px;
+  background: #ffffff;
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 30px;
+  text-align: center;
+  background: #ffffff;
+}
+
+.header h1 {
+  font-size: 50px;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #ffffff;
+}
+
+/* Style the topnav links */
+a {
+  float: left;
+  display: block;
+  color: #2d3345;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+a:hover {
+  color: #4bb084;
+}
+
+.nav-row{
+
+}
+
+.nav-brand-column{
+  float:left;
+}
+
+.nav-column{
+  float:left;
+  margin-top:8px;
+  text-decoration: none;
+}
+
+.nav-column-right{
+  float:right;
+  margin-top:8px;
+  text-decoration: none;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  background-color: #ffffff;
+  padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+  background-color: #ffffff;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  background: #575664;
+  margin-top: 20px;
+  color: #4bb084;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+
+/* Facebook */
+.fa-facebook {
+  padding: 5px;
+  font-size: 18px;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  text-decoration: none;
+  background: #3B5998;
+  color: white;
+}
+
+/* Twitter */
+.fa-twitter {
+  padding: 5px;
+  font-size: 18px;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  text-decoration: none;
+  background: #55ACEE;
+  color: white;
+}
+
+/* Instagram */
+.fa-instagram {
+  padding: 5px;
+  font-size: 18px;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  text-decoration: none;
+  background: #C13584;
+  color: white;
+}

@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Session4 Forms</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body>
+    <header>
+      <a name="top"><h1>Session 4 Forms</h1></a>
+      
+    </header>
+
+    <nav>
+      <button><a href="#sign-up">Sign up</a></button>
+      <button><a href="#vet-services">Vet services</a></button>
+      <button><a href="#library">Library book search </a></button>
+      <button><a href="#loyalty-card">Loyalty card</a></button>
+    </nav>
+
+    <main>
+      <div id="sign-up">
+        <form>
+          <fieldset>
+            <legend><h3>Sign Up Form</h3></legend>
+            <p>
+              <label for="email">Email:</label><br />
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="e.g 
+ a.s@email.com"
+              />
+            </p>
+            <p>
+              <label for="cemail">Confirm Email:</label><br />
+              <input
+                type="cemail"
+                id="cemail"
+                name="cemail"
+                placeholder="e.g 
+ a.s@email.com"
+              />
+            </p>
+            <p>
+              <label for="uname">Username:</label><br />
+              <input type="text" id="uname" name="uname" placeholder="" />
+            </p>
+            <p>
+              <label for="password">Password:</label><br />
+              <input type="password" id="pword" name="pword" placeholder="" />
+            </p>
+            <p>
+              <label for="dob">Date of birth:</label>
+              <input type="date" id="dob" name="dob" />
+            </p>
+
+            <input type="radio" id="male" name="gender" value="male" />
+            <label for="male">Male</label><br />
+            <input type="radio" id="male" name="gender" value="female" />
+            <label for="female">Female</label><br />
+            <input
+              type="radio"
+              id="non-binary"
+              name="gender"
+              value="non-binary"
+            />
+            <label for="non-binary">Non Binary</label><br />
+            <p>
+              <input type="submit" value="Submit" />
+              <input type="reset" />
+            </p>
+          </fieldset>
+        </form>
+       <button><a href="#top">Top</a></button>
+      </div>
+
+      <div id="vet-services">
+        <form>
+          <fieldset>
+            <legend><h3>Vet Services Form</h3></legend>
+
+            <p>
+              <label for="text">First Name:</label><br />
+              <input
+                type="fname"
+                id="fname"
+                name="fname"
+                placeholder="e.g Alex"
+              />
+            </p>
+            <p>
+              <label for="text">Last Name:</label><br />
+              <input
+                type="lname"
+                id="lname"
+                name="lname"
+                placeholder="e.g Smith"
+              />
+            </p>
+            <p>
+              <label for="email">Email:</label><br />
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="e.g 
+ a.s@email.com"
+              />
+            </p>
+            <p>
+              <label for="animal">Type of Animal:</label>
+              <select id="animal" name="animal">
+                <option value="dog">Dog</option>
+                <option value="cat">Cat</option>
+                <option value="bird">Bird</option>
+                <option value="reptile">Reptile</option>
+                <option value="fish">Fish</option>
+              </select>
+            </p>
+            <label for="message">Your Message:</label><br />
+            <textarea name="message" rows="10" cols="30"></textarea>
+            <p>
+              <input type="submit" value="Submit" />
+              <input type="reset" />
+            </p>
+          </fieldset>
+        </form>
+        <button><a href="#top">Top</a></button>
+      </div>
+
+      <div id="library">
+        <form>
+          <fieldset>
+            <legend><h3>Library Book Search</h3></legend>
+            <label for="book-name">Book Name:</label>
+            <input type="search" id="bnsearch" name="bnsearch" />
+
+            <fieldset>
+              <legend><h5>Narrow your search</h5></legend>
+              <label for="genre">Genre:</label>
+              <select id="genre" name="genre">
+                <option value="fiction">Fiction</option>
+                <option value="non-fiction">Non Fiction</option>
+                <option value="yadult">Young Adult</option>
+                <option value="horror">Horror</option>
+                <option value="scifi">SciFi</option>
+              </select>
+            </fieldset>
+            <p>
+              <input type="submit" value="Search" />
+              <input type="reset" />
+            </p>
+          </fieldset>
+        </form>
+        <button><a href="#top">Top</a></button>
+      </div>
+
+      <div id="loyalty-card">
+        <form>
+          <fieldset>
+            <legend><h3>Loyalty Card</h3></legend>
+            <p>
+              <label for="fname">First name:</label><br />
+              <input type="text" id="fname" name="fname" />
+            </p>
+            <p>
+              <label for="lname">Last name:</label><br />
+              <input type="text" id="lname" name="lname" />
+            </p>
+            <p>
+              <label for="email">Email:</label><br />
+              <input type="email" id="email" name="email" />
+            </p>
+            <p>
+              <label for="address1">Address</label><br />
+              <label for="address1">Line 1:</label><br />
+              <input type="text" id="address1" name="address1" /><br />
+              <label for="address">Line 2:</label><br />
+              <input type="text" id="address2" name="address2" /><br />
+              <label for="address3">Town:</label><br />
+              <input type="text" id="address3" name="address3" /><br />
+              <label for="address4">Postcode:</label><br />
+              <input type="text" id="address4" name="address4" /><br />
+              <label for="phone">Contact Number:</label><br />
+              <input
+                type="tel"
+                id="phone"
+                name="phone"
+                pattern="[0-9]{5} [0-9]{3} [0-9]{3}"
+                placeholder="12345 123 123"
+              />
+            </p>
+            <p>
+              <input type="submit" value="Submit" />
+              <input type="reset" />
+            </p>
+          </fieldset>
+        </form>
+        <button><a href="#top">Top</a></button>
+      </div>
+    </main>
+
+    <footer>
+      <p>©KAW Inc.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

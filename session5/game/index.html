@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Session4 Game</title>
+    <link href="styles/main.css" rel="stylesheet" type="text/css" />
+    <link href="styles/welcome.css" rel="stylesheet" type="text/css" />
+    <link href="styles/character.css" rel="stylesheet" type="text/css" />
+  </head>
+
+<body>
+
+<header>
+  <img src="images/text-horror-banner.png" alt="banner" width="100%" />
+
+  <p class="welcome">
+        Welcome to my first ever text adventure game. I have choosen the genre
+        of horror as it's my favourite. <br />
+        I have been influenced by
+        <a class="welcome-link" href="https://www.wohgame.com/"
+          >World of Horror</a
+        >,
+        <a
+          class="welcome-link"
+          href="https://en.m.wikipedia.org/wiki/The_Forest_of_Doom"
+          >The Forest of Doom
+        </a>
+        and
+        <a
+          class="welcome-link"
+          href="https://en.wikipedia.org/wiki/Analog_horror"
+          >Analog Horror</a
+        >
+      </p>
+</header>
+
+<section>
+  <article>
+  <div id="character-build">
+        <!-- Hairs -->
+        <input type="radio" name="hair" id="hair-1" checked />
+        <input type="radio" name="hair" id="hair-2" />
+        <input type="radio" name="hair" id="hair-3" />
+        <input type="radio" name="hair" id="hair-4" />
+        <input type="radio" name="hair" id="hair-5" />
+        <input type="radio" name="hair" id="hair-6" />
+
+        <div class="charac-container">
+          <div class="back-hairs"></div>
+          <div class="arm arm-left"></div>
+          <div class="arm arm-right"></div>
+          <div class="leg leg-left"></div>
+          <div class="leg leg-right"></div>
+          <div class="body"></div>
+          <div class="pant"></div>
+          <div class="shirt">
+            <div class="sleeve"></div>
+          </div>
+          <div class="belt"></div>
+          <div class="head">
+            <div class="eye"></div>
+            <div class="nose"></div>
+            <div class="mouth"></div>
+            <div class="front-hairs"></div>
+          </div>
+        </div>
+  </article>
+  
+  <article>
+      
+      <form>
+        <label for="name">Character Name:</label>
+        <input type="text" id="name" name="name" placeholder="Ellen Ripley"/>
+        <br><br>
+        <label for="hair-color">Hair Color:</label>
+        <input type="color" id="hair-color" name="hair-color" />
+        <label for="skin-color">Skin Color:</label>
+        <input type="color" id="skin-color" name="skin-color" />
+        <label for="eye-color">Eye Color:</label>
+        <input type="color" id="eye-color" name="eye-color" />
+        <br>
+        <label for="shirt-color">Shirt Color:</label>
+        <input type="color" id="shirt-color" name="shirt-color" />
+        <label for="belt-color">Belt Color:</label>
+        <input type="color" id="belt-color" name="belt-color" />
+        <label for="pant-color">Pant Color:</label>
+        <input type="color" id="pant-color" name="pant-color" />
+<br><br>
+        <button type="button" id="begin" onclick="showElem()">Finish Character</button>
+      </form>
+        </div>
+        </div>
+  </article>
+</section>
+  <div id="welcome-selection">
+        <p class="welcome">Get started by selecting a destination.</p>
+        <a class="start-link" href="school.html" target="_self">School</a>
+    <!--
+        <a class="start-link" href="" target="">Hospital</a>
+        <a class="start-link" href="" target="_blank">House</a>
+    -->
+      </div>
+
+<footer>
+  <p>KAW Inc</p>
+</footer>
+
+    <script src="scripts/script.js"></script>
+  </body>
+</html>
