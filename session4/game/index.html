@@ -1,111 +1,83 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width" />
-    <title>Session4 Game</title>
-    <link href="styles/main.css" rel="stylesheet" type="text/css" />
-    <link href="styles/welcome.css" rel="stylesheet" type="text/css" />
-    <link href="styles/character.css" rel="stylesheet" type="text/css" />
-  </head>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>The Town</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
 
 <body>
-
-<header>
-  <img src="images/text-horror-banner.png" alt="banner" width="100%" />
-
-  <p class="welcome">
-        Welcome to my first ever text adventure game. I have choosen the genre
-        of horror as it's my favourite. <br />
-        I have been influenced by
-        <a class="welcome-link" href="https://www.wohgame.com/"
-          >World of Horror</a
-        >,
-        <a
-          class="welcome-link"
-          href="https://en.m.wikipedia.org/wiki/The_Forest_of_Doom"
-          >The Forest of Doom
-        </a>
-        and
-        <a
-          class="welcome-link"
-          href="https://en.wikipedia.org/wiki/Analog_horror"
-          >Analog Horror</a
-        >
-      </p>
-</header>
-
-<section>
-  <article>
-  <div id="character-build">
-        <!-- Hairs -->
-        <input type="radio" name="hair" id="hair-1" checked />
-        <input type="radio" name="hair" id="hair-2" />
-        <input type="radio" name="hair" id="hair-3" />
-        <input type="radio" name="hair" id="hair-4" />
-        <input type="radio" name="hair" id="hair-5" />
-        <input type="radio" name="hair" id="hair-6" />
-
-        <div class="charac-container">
-          <div class="back-hairs"></div>
-          <div class="arm arm-left"></div>
-          <div class="arm arm-right"></div>
-          <div class="leg leg-left"></div>
-          <div class="leg leg-right"></div>
-          <div class="body"></div>
-          <div class="pant"></div>
-          <div class="shirt">
-            <div class="sleeve"></div>
-          </div>
-          <div class="belt"></div>
-          <div class="head">
-            <div class="eye"></div>
-            <div class="nose"></div>
-            <div class="mouth"></div>
-            <div class="front-hairs"></div>
-          </div>
-        </div>
-  </article>
-  
-  <article>
+  <h1>The Town</h1>
+  <section>
+    <article id="character">
+<form>
+  <label for="fname">Character Name:</label><br>
+  <input type="text" id="fname" name="fname">
+  <br><br>
+  <label for="stats-label">Stats:</label><br>
+  <button id="hide-stats-button" type="button"  onclick='stats()'>Roll</button>
+  <table>
+  <tr>
+    <th>Strength</th>
+    <th>Dexterity</th>
+    <th>Luck</th>
+  </tr>
+  <tr>
+    <td><span id="strength"> </span></td>
+    <td><span id="dex"> </span></td>
+    <td><span id="luck"> </span></td>
+  </tr>
+</table>
+</form>
+      </article>
+  </section>
+<br>
+  <section>
+    <article>
+    <p>You stop and thank the gods as you see a small town in the distance. Getting lost in the wilderness was not one your finest moments. Feeling that hunger pang stab at your stomach makes you quicken your pace. You almost run towards the large town gates, which gets the attention of the two gaurds either side of the opening.</p>
+      <p>The guards begin to position themselves in front of the opening of the town, clearly to stop you from entering.</p>
+      <p>Do you push past them or stop and explain yourself?</p>
+      <button id="button-push" onclick="showPush()">Push Past</button><button id="button-stop" onclick="showStop()">Stop</button>
+      </article>
+  </section>
+<br>
+  <section>
+    <article id="push" class="section-no-show">
+      <p>You push past the guards who are not at all happy with your move. They shout angrily at you. Feeling their disdain you break out into a run and try to lose them.</p>
+      <p>The shouts of the guards start to attract a lot of unwanted attention. You must find a place to hide. Your success is dependant on your luck stat.</p>
+      <p>If your luck is greater than or equal to 7 then you escape the guards and loose the heat <button id="button-≤7" onclick="showGreaterThan()" >≤7</button></p>
+      <p>If your luck is less than 7 then you are caught by the gaurds and taken to jail <button id="button->7" onclick="showLessThan()">>7</button></p>
       
-      <form>
-        <label for="name">Character Name:</label>
-        <input type="text" id="name" name="name" placeholder="Ellen Ripley"/>
-        <br><br>
-        <label for="hair-color">Hair Color:</label>
-        <input type="color" id="hair-color" name="hair-color" />
-        <label for="skin-color">Skin Color:</label>
-        <input type="color" id="skin-color" name="skin-color" />
-        <label for="eye-color">Eye Color:</label>
-        <input type="color" id="eye-color" name="eye-color" />
-        <br>
-        <label for="shirt-color">Shirt Color:</label>
-        <input type="color" id="shirt-color" name="shirt-color" />
-        <label for="belt-color">Belt Color:</label>
-        <input type="color" id="belt-color" name="belt-color" />
-        <label for="pant-color">Pant Color:</label>
-        <input type="color" id="pant-color" name="pant-color" />
-<br><br>
-        <button type="button" id="begin" onclick="showElem()">Finish Character</button>
-      </form>
-        </div>
-        </div>
+    </article>
+    <article id="stop" class="section-no-show">
+      <p>You stop running and walk calmly up the two guards who are in your way. You smile politely and explain how you had gotten lost in the wildernesss and in need of food and a place to rest.</p>
+      <p>The guards laugh at your ineptness as a traveller. You feel your face redden and can't help but feel sorry for yourself as the guards part and let you through</p>
+    </article>
+  </section>
+  <br>
+<section>
+  <article id="≤7" class="section-no-show">
+    <p>You escape the guards and the insueing mob, a black clad figure pulls you into the nearby alleyway. They motion to you to follow them. Wishing not to annoy anyone else you follow the figure to a nearby court yard. Here you see a mug of ale and some scraps of food. The figure smiles and motions for you to sit.</p>
+<p>The figure sits opposite you and signals that it is ok for you to take some food and drink. Without hestitation you dig into the offerings. You start to feel much better with a full belly.</p>
+    <p>The figure says nothing to you, you both sit in silence until you finish your meal. Finally you get the courage to speak. "Who are you?" The figure does not reply at first it's like they are guarding themselves. after what seems like an age they ask you a question</p>
+    <p>"I have a room for you to stay in. As I have been expecting you traveller."</p>
+    <p>The figure explains that they have waited for a traveller matching your description for years. They say a prophecy fortells that you are the only one who can salve the relm from the "Unknown". A tretcherous force hell bent on destroying the relm and all who reside in it.</p>
+    <p>You laugh them off and decide to get a good nights sleep.</p>
+    <p>In the morning the figure hands you a bag and a sword. They wish you luck and send you out of the town safely.</p>
+    <button><a href="bog-lands.html">The Bog Lands</a></button>
+    
+  </article>
+  <article id=">7" class="section-no-show">
+    <p>The guards catch up to you and restrain you with iron shackles. Pushing you along towards the town jail. This is not the best situation. You are thrown into a cell, hitting the cobbled floor you notice all there is is a bucket and straw bed. How can you escape you ask yourself.</p>
+    <p>You call out to the guards and plead your innocence but no one answers. Finally after what seems like hours a tall man brings in a tray of almost rotten food and a mug of what looks like water. You hope. Setting the food down the man says nothing and leaves the cell.</p>
   </article>
 </section>
-  <div id="welcome-selection">
-        <p class="welcome">Get started by selecting a destination.</p>
-        <a class="start-link" href="school.html" target="_self">School</a>
-    <!--
-        <a class="start-link" href="" target="">Hospital</a>
-        <a class="start-link" href="" target="_blank">House</a>
-    -->
-      </div>
+ 
+  
+<script src="script.js"></script>
 
-<footer>
-  <p>KAW Inc</p>
-</footer>
+</body>
 
-    <script src="scripts/script.js"></script>
-  </body>
 </html>

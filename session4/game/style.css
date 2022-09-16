@@ -1,0 +1,16 @@
+article{
+  border-style: double;
+  width:80%;
+  margin: auto;
+}
+
+th, td {
+  border:1px solid black;
+  text-align: center;
+  padding: 5px;
+}
+
+.section-no-show{
+  visibility: hidden;
+}
+
