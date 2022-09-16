@@ -19,11 +19,13 @@ header{
 
 .row {
   display: flex;
+  flex-direction: row;
 }
 
 .column {
   flex: 45%;
   padding: 50px;
+  
 }
 
 .left{
@@ -67,6 +69,13 @@ p{
   text-align:justify;
 }
 
-.footer{
+.p-footer{
   text-align: center;
+}
+
+/* Responsive layout - makes the menu and the content (inside the section) sit on top of each other instead of next to each other */
+@media (max-width: 912px) {
+  .row {
+    flex-direction: column;
+  }
 }
