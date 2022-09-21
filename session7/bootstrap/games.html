@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>TDBD - Games</title>
+
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+
+    <script
+      src="https://kit.fontawesome.com/5ee0a1b628.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link href="style.css" rel="stylesheet" />
+
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <img class="bannerimg" src="tdbdBanner.png" alt="The Daily Brain Dumb Banner" width="100%" />
+
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img class="navbar-img" src="TDBD.png" alt="Banner Image" width="100px" height="50px"/></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="code.html">Tech</a>
+        </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <br />
+
+    <main class="container">
+
+      <div class="row g-5">
+        <div class="col-md-8">
+          <article class="blog-post">
+            <h2 class="blog-post-title mb-1">Indie horror games dev spotlight</h2>
+            <p class="blog-post-meta">
+              Tue 20 Sep 2022 by <a href="#">Kerry</a>
+            </p>
+            <p>
+              Puppet Combo is great at creating 80s styled pixel horror games. They have such titles as Babysitter Bloodbath, Nun Massacre, Power Drill Massacre and The Night Ripper.
+            </p>
+           <img src="games/bsb_vhs.jpg" alt="puppet combo logo" width="20%" height="20%" />
+            <img src="games/nun_vhs.jpg" alt="puppet combo logo" width="20%" height="20%" />
+            <img src="games/pdm_vhs.jpg" alt="puppet combo logo" width="20%" height="20%" />
+            <img src="games/nr_vhs.jpg" alt="puppet combo logo" width="20%" height="20%" />
+          </article>
+        </div>
+
+        <div class="col-md-4">
+          <div class="position-sticky" style="top: 2rem">
+            <div class="p-4 mb-3 bg-light rounded">
+              <h4 class="fst-italic">About</h4>
+              <p class="mb-0">
+                Welcome to The Daily Brain Dump. My personal blog where I shall be dumping the contents of my brain. (Warning! may not be daily)
+              </p>
+            </div>
+
+            <div class="p-4">
+              <h4 class="fst-italic">Archives</h4>
+              <ol class="list-unstyled mb-0">
+                <li><a href="#">September 2022</a></li>
+              </ol>
+            </div>
+
+            <div class="p-4">
+              <h4 class="fst-italic">Elsewhere</h4>
+              <ol class="list-unstyled">
+                <li>
+                  <a href="https://github.com/kerry91"
+                    ><i class="fa-brands fa-square-github fa-2xl"></i
+                  ></a>
+                </li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <hr />
+    <footer class="blog-footer">
+      <div class="row">
+        <div class="col-4">
+          <span class="copyright text-muted"> Ⓒ 2022 KAW Inc. </span>
+        </div>
+
+        <div class="col-8">
+          
+          <form class="row row-cols-lg-auto g-3 justify-content-end align-items-center">
+            <div class="col-12">
+<span>Sign up to my Brain Dump:</i></span>
+            </div>
+            <div class="col-12">
+              <label class="visually-hidden" for="formEmail">Sign up to my Brain Dump</label>
+              <div class="input-group">
+                <input
+                  type="email"
+                  class="form-control"
+                  id="formEmail"
+                  placeholder="Email"
+                />
+              </div>
+            </div>
+            
+            <div class="col-12">
+              <button type="submit" class="btn btn-dark">Submit</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
