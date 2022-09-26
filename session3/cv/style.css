@@ -1,0 +1,44 @@
+.details{
+  border-collapse: collapse;
+  width: 25%;
+}
+
+.work {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.details th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left:5px;
+  text-align: left;
+  background-color: #04AA6D;
+  color: white;
+  border: 1px solid #ddd;
+  width:15%;
+}
+
+.work th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left:5px;
+  text-align: left;
+  border: 1px solid #ddd;
+}
+
+.details td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.work td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+tr:hover {background-color: #ddd;}
+
+
+
+
