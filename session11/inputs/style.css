@@ -1,0 +1,55 @@
+body {
+background-color: #ffffff;
+}
+
+input{
+  border: none;
+}
+
+button {
+  height: 55px;
+  width: 55px;
+  margin: 10px 4px;
+  box-shadow: inset 1px 1px 50px #41424d;
+  border: none;
+  border-radius: 50%;
+  font-size: 30px;
+  color: white;
+}
+
+#allClear, .negative, .percent {
+  box-shadow: inset 1px 1px 50px  #828181;
+}
+#equals, .plus, .minus, .multiply, .devide{
+  box-shadow: inset 1px 1px 50px #A45502;
+}
+
+.zero{
+  height: 55px;
+  width: 121px;
+  border-radius: 35%;
+}
+
+.calcBG {
+  width: 280px;
+  background-color:  black;
+  border-radius: 20px;
+  padding: 20px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  box-shadow: inset 1px 1px 50px #000;
+  margin: 25vh auto;
+}
+.screen {
+  background: black;
+  color: white;
+  height: 40px;
+  width:85%;
+  text-align: right;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px 2px;
+  font-size: 24px;
+  font-weight: bold;
+
+}
