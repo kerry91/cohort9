@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>JS Challenge</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <script
+      src="https://kit.fontawesome.com/ff9a0acac1.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <nav class="topnav" id="myTopnav">
+      <div class="nav-row">
+        <div class="nav-column nav-left">
+          <a id="brand" href="#home" class="active"
+            ><img src="images/logo.png" alt="logo" width="200" height="50"
+          /></a>
+        </div>
+        <div class="nav-column nav-middle">
+          <a
+            href="javascript:void(0);"
+            class="icon"
+            onclick="responsiveMenu()"
+          ></a>
+          <a class="nav-link" href="#news">Home</a>
+          <a class="nav-link" href="#contact">About</a>
+          <a class="nav-link" href="#about">Collection</a>
+          <a class="nav-link" href="#about">Category</a>
+        </div>
+        <a href="javascript:void(0);" class="icon" onclick="responsiveMenu()">
+          <i class="fa fa-bars"></i>
+        </a>
+        <div class="nav-column nav-right">
+          <a
+            href="javascript:void(0);"
+            class="icon"
+            onclick="responsiveMenu()"
+          ></a>
+          <a id="cart" href="#cart"
+            ><img src="images/cart.png" alt="cart" width="30" height="30"
+          /></a>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <div class="flex-container">
+        <div class="flex-item-left">
+          <div class="side-nav">
+            <ul class="side-nav-ul">
+              <li>
+                <img class="side-nav-li"
+                  src="images/facebook.png" 
+                  alt="facebook" 
+                  width="25" 
+                  height="25" />
+              </li>
+              <li>
+                <img
+                  class="side-nav-li"
+                  src="images/instagram.png"
+                  alt="facebook"
+                  width="25"
+                  height="25"
+                />
+              </li>
+              <li>
+                <img
+                  class="side-nav-li"
+                  src="images/twitter.png"
+                  alt="facebook"
+                  width="25"
+                  height="25"
+                />
+              </li>
+              <li>
+                <img
+                  class="side-nav-li"
+                  src="images/linkedin.png"
+                  alt="facebook"
+                  width="25"
+                  height="25"
+                />
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="flex-item-middle">
+          <div class="carousel">
+            <button>2022 Collections</button>
+            <h1 class="carousel-h1">You should always feel pretty</h1>
+            <br />
+            <span class="carousel-p"
+              >Clothes that are sure to heat up your winter</span
+            >
+            <br />
+            <br />
+            <p class="carousel-arrows">
+              <img
+                class="carousel-back-arrow"
+                src="images/back-arrow.png"
+                alt="back arrow"
+                width="50"
+                height="50"
+              />
+              <img
+                class="carousel-next-arrow"
+                src="images/next-arrow.png"
+                alt="back arrow"
+                width="50"
+                height="50"
+              />
+            </p>
+          </div>
+        </div>
+
+        <div class="picture">
+          <img
+            class="winter"
+            src="images/winter.png"
+            alt="winter"
+            width=""
+            height=""
+          />
+        </div>
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
