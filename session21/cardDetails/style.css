@@ -1,0 +1,305 @@
+body{
+  background-image: url("images/bg-main-desktop.png");
+  background-repeat: no-repeat;
+}
+
+#card-front-container{
+  position: absolute;
+  top:20%;
+  left: 13%;
+  width: 447px;
+  height: 245px;
+  background-image: url("images/bg-card-front.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 3;
+
+}
+
+#card-back-container{
+  position: absolute;
+  top:55%;
+  left: 20%;
+  width: 447px;
+  height: 245px;
+  background-image: url("images/bg-card-back.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 2;
+}
+
+.formCol{
+  margin-top: 15%;
+  visibility: show;
+}
+
+.subBtn{
+  width:100%;
+}
+
+.cardLogo{
+  position:absolute;
+  top: 5%;
+  left:5%;
+}
+
+#cNumber{
+  position:absolute;
+  bottom: 7%;
+  left:5%;
+  color: white;
+  font-size: 34px;
+}
+
+#cName{
+  position:absolute;
+  bottom: 0%;
+  left:5%;
+  color: white;
+}
+
+#cMM{
+  position:absolute;
+  bottom: 0%;
+  right:15%;
+  color: white;
+}
+
+#cYY{
+  position:absolute;
+  bottom: 0%;
+  right:8%;
+  color: white;
+}
+
+#slash{
+  position:absolute;
+  bottom: 0%;
+  right:13%;
+  color: white;
+}
+
+#cCvc{
+  position:absolute;
+  top: 45%;
+  right:12%;
+  color: white;
+}
+
+@media screen and (max-width: 992px) {
+  body{
+    background-image: url("images/bg-main-desktop.png");
+    background-size: auto;
+    background-repeat: no-repeat;
+  }
+  .cardFront{
+    position: absolute;
+    top:20%;
+    left: 5%;
+    width:85%;
+    height:100vh;
+  }
+
+  .cardBack{
+    position: absolute;
+    top:5%;
+    left: 10%;
+    width:85%;
+    height:25%;
+  }
+  .formCol{
+    margin-top: 20% !important;
+  }
+  .cardLogo{
+    position:absolute;
+    top: 5%;
+    left:5%;
+  }
+
+  #cNumber{
+    position:absolute;
+    bottom: 7%;
+    left:5%;
+    color: white;
+    font-size: 24px;
+  }
+
+  #cName{
+    position:absolute;
+    bottom: 0%;
+    left:5%;
+    color: white;
+  }
+
+  #cMM{
+    position:absolute;
+    bottom: 0%;
+    right:15%;
+    color: white;
+  }
+
+  #cYY{
+    position:absolute;
+    bottom: 0%;
+    right:8%;
+    color: white;
+  }
+
+  #slash{
+    position:absolute;
+    bottom: 0%;
+    right:13%;
+    color: white;
+  }
+
+  #cCvc{
+    position:absolute;
+    top: 45%;
+    right:12%;
+    color: white;
+  }
+  .successPanel {
+
+      position: absolute;
+      top: 60% !important;
+      right: 0 !important;
+}
+#card-front-container{
+  position: absolute;
+  top:5%;
+  left: 6%;
+  width: 357px;
+  height: 195px;
+
+}
+
+#card-back-container{
+  position: absolute;
+  top:25%;
+  left: 13%;
+  width: 357px;
+  height: 195px;
+}
+.formCol{
+  margin-top: 95%;
+}
+}
+
+
+@media screen and (max-width: 600px) {
+  body{
+    background-image: url("images/bg-main-mobile.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  .cardFront{
+    position: absolute;
+    top:20%;
+    left: 5%;
+    width:85%;
+    height:25%;
+  }
+
+  .cardBack{
+    position: absolute;
+    top:5%;
+    left: 10%;
+    width:85%;
+    height:25%;
+    z-index: -1;
+  }
+  .formCol{
+    margin-top: 85%;
+  }
+  .cardLogo{
+    position:absolute;
+    top: 5%;
+    left:5%;
+  }
+
+  #cNumber{
+    position:absolute;
+    bottom: 7%;
+    left:5%;
+    color: white;
+    font-size: 24px;
+  }
+
+  #cName{
+    position:absolute;
+    bottom: 0%;
+    left:5%;
+    color: white;
+  }
+
+  #cMM{
+    position:absolute;
+    bottom: 0%;
+    right:15%;
+    color: white;
+  }
+
+  #cYY{
+    position:absolute;
+    bottom: 0%;
+    right:8%;
+    color: white;
+  }
+
+  #slash{
+    position:absolute;
+    bottom: 0%;
+    right:13.5%;
+    color: white;
+  }
+
+  #cCvc{
+    position:absolute;
+    top: 45%;
+    right:12%;
+    color: white;
+  }
+  .successPanel {
+
+      position: absolute;
+      top: 60% !important;
+      right: 0 !important;
+}
+#card-front-container{
+  position: absolute;
+  top:22%;
+  left: 2%;
+  width: 357px;
+  height: 195px;
+
+}
+
+#card-back-container{
+  position: absolute;
+  top:5%;
+  left: 2%;
+  width: 357px;
+  height: 195px;
+}
+.formCol{
+  margin-top: 100% !important;
+}
+}
+
+
+
+.successPanel{
+  visibility: hidden;
+  position:absolute;
+  top:35%;
+  right:9%;
+}
+
+.thanks{
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.added{
+  font-size: 16px;
+}
