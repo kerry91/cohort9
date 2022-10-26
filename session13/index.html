@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+<div class="container">
+  <div>
+    <button onclick="cLogX2()">Console Log Two Variables</button>
+  </div>
+<hr/>
+  <div>
+    <form name="maths">
+      <input type="number" id="num-one" name="num-one" placeholder="Enter a number" min="1" max="5"><br>
+      <input type="number" id="num-two" name="num-two" placeholder="Enter a number" min="1" max="5"><br>
+      <input type="number" id="num-three" name="num-three" placeholder="Enter a number" min="1" max="5">
+      <br><br>
+    <a href="javascript:void(0)" id="submit" type="submit" value="Submit" onclick="submitForm()">Submit</a>
+      <h2 id="results"></h2>
+    </form>
+  </div>
+  <hr/>
+  <div>
+
+  </div>
+  <hr/>
+    <div>
+    <button onclick="cLogX2CS()">Console Log Two Concatenated Strings</button>
+  </div>
+<hr/>
+    <div>
+    <form name="string-match">
+      <input type="text" id="string-one" name="string-one" placeholder="Enter a string"><br>
+      <input type="text" id="string-two" name="string-two" placeholder="Enter a string"><br>
+      <br><br>
+    <a href="javascript:void(0)" id="submit2" type="submit" value="Submit2" onclick="submitForm2()">Submit</a>
+      <h2 id="results2"></h2>
+    </form>
+  </div>
+  <hr/>
+  <div>
+  <button onclick="strings()">Console Log Strings</button>
+    
+  </div>
+  <hr/>
+</div>
+  
+<script src="script.js"></script>
+</body>
+
+</html>
