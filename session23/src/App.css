@@ -1,0 +1,58 @@
+
+.App-header {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.Button-Properties {
+  height: 50px;
+  width: 100px;
+  background-color: red;
+  color: aquamarine;
+  border-radius: 1em;
+}
+
+.card{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.SplitCard {
+  width: 500px;
+  height: 250px;
+  border: 1px solid black;
+  margin: 5px;
+}
+
+.SplitCard-left {
+  float: left;
+  width: 50%;
+  height: 100%;
+}
+
+.SplitCard-right {
+  float: left;
+  width: 50%;
+  height: 100%;
+}
+
+.Picture {
+  width: auto;
+  height: 100%; 
+  background-image: url('images/tropical.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.Text {
+  padding: 0 5px 0 5px;
+  width: auto;
+  height: 100%; 
+  background-color: pink;
+}
